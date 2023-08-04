@@ -10,6 +10,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgb(0, 0, 0);
+  overflow-x: hidden;
 }
 
 
@@ -237,7 +238,7 @@ button {
 }
 
 
-footer{
+footer {
   position: relative;
   padding: 4vh;
   width: 100%;
@@ -263,41 +264,41 @@ footer{
 } */
 
 
-.logo{
+.logo {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2vh 0;
 }
 
-.logo img{
-   width: 10%;
-   border-radius: 50%;
-   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+.logo img {
+  width: 10%;
+  border-radius: 50%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.footerLinks ul{
-  list-style:none ;
+.footerLinks ul {
+  list-style: none;
   display: flex;
   gap: 20px;
   color: #fff;
 }
 
-.footerLinks ul li{
- font-size: 2.5vh;
- font-weight: 400;
+.footerLinks ul li {
+  font-size: 2.5vh;
+  font-weight: 400;
 }
 
-footer p{ 
-  color:#ffffff;
+footer p {
+  color: #ffffff;
   font-size: 2.2vh;
   margin: 2vh 0;
   text-align: center;
   width: 50%;
 }
 
-.socialLinks ul{
-  list-style:none ;
+.socialLinks ul {
+  list-style: none;
   display: flex;
   justify-content: space-between;
   gap: 30px;
@@ -305,9 +306,9 @@ footer p{
   margin: 2vh 0;
 }
 
-.socialLinks ul li{
+.socialLinks ul li {
   font-size: 4vh;
- }
+}
 
 
 @media (max-width:650px) {
@@ -337,29 +338,40 @@ footer p{
     padding: 1vh;
   }
 
+  .carDetails h3 {
+    font-size: 2vh;
+  }
+
+  .carDetails strong {
+    font-size: 2vh;
+}
+
   .bottomCarSection {
     width: 100%;
     height: 40%;
   }
 
-  .midSection{
+  .midSection {
     flex-direction: column-reverse;
   }
 
-  .midLeft{
+  .midLeft {
     width: 100%;
   }
 
-  .midRight{
+  .midRight {
     width: 100%;
+    padding: 1vw;
   }
 
   .midRight>h3 {
     font-size: 5vh;
   }
+
   .midRight>h4 {
     font-size: 3vh;
   }
+
   midRight>p {
     font-size: 2.5vh;
     padding: 4px;
@@ -369,5 +381,15 @@ footer p{
     margin: 1vh 0;
     font-size: 2vh;
     width: 100%;
+  }
+
+  .footerLinks ul {
+    list-style: none;
+    gap: 20px;
+    display: list-item;
+    color: #fff;
+    column-count: 2;
 }
+
+  
 }
