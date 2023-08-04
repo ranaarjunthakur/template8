@@ -275,7 +275,7 @@ footer {
     width: 10%;
     border-radius: 50%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    /* aspect-ratio: 5/3; */
+    aspect-ratio: 5/3;
     object-fit: contain;
     mix-blend-mode: color-dodge;
 }
